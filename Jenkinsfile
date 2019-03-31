@@ -7,7 +7,7 @@ pipeline {
 		stage ('Build') {
 			steps {
 				withMaven(maven : 'maven_3_6_0'){
-					sh 'export PATH=$MAVEN_HOME\bin && mvn clean package'
+					sh 'export PATH=$MAVEN_HOME/bin && mvn clean package'
 				}
 			}
 			
