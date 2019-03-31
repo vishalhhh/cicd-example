@@ -4,14 +4,7 @@ pipeline {
 	
 	stages {
 	
-	    stage ('Preparation') {
-	    	
-	    	steps { 
-	    		def mvnHome = tool 'maven_3_6_0'
-	    	}
-	    }
-	
-		stage ('Build') {
+	    stage ('Build') {
 			steps {
 					withMaven(maven : 'maven_3_6_0'){
 					sh "'${mvnHome}/bin/mvn' clean package"
