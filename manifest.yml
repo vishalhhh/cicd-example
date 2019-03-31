@@ -1,0 +1,5 @@
+applications:
+- name: demo-jpa-hibernate
+  instances:1
+  memory: 800m
+  path: target/demo-jpa-hibernate-0.0.1-SNAPSHOT.jar
