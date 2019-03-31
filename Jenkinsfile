@@ -7,7 +7,7 @@ pipeline {
 	    stage ('Preparation') {
 	    	
 	    	steps { 
-	    		mvnHome = tool 'maven_3_6_0'
+	    		def mvnHome = tool 'maven_3_6_0'
 	    	}
 	    }
 	
