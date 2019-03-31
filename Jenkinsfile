@@ -6,7 +6,9 @@ pipeline {
 	
 	    stage ('Preparation') {
 	    	
-	    	mvnHome = tool 'maven_3_6_0'
+	    	steps { 
+	    		mvnHome = tool 'maven_3_6_0'
+	    	}
 	    }
 	
 		stage ('Build') {
